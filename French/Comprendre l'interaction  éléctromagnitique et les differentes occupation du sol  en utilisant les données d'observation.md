@@ -27,15 +27,13 @@
 
 > **La spectroscopie optique** utilisée avec les données de Sentinel 2 permet donc d'obtenir des cartes détaillées de la composition des surfaces terrestres à une échelle globale. Ces informations sont essentielles pour de nombreuses applications, telles que la gestion des ressources naturelles, la surveillance de l'environnement, l'agriculture de précision, la cartographie des habitats, etc.
 
-
-
 ##  Zone d'étude
 
 > Ici nous allons considérer  4  occupations de sol a savoir l'eau sur le lac de guier, le sol nu, zone de culture et la végétation aquatique. L'outil géometrie de Google Earth Engine a ete utilisé pour la creation des classes. vous pouvez integrer autant de classe possible dans une zone  donnees. Pour information le lac de guier se trouve au nord du senegal et il fait l'objet de nombreuses etudes scientifiques notament la qualité de son eau.  
 
-![fig2](/Users/modoumbaye/Dev/modou Cours Gee/Figures/fig2.png)
 
 
+<img src="/Users/modoumbaye/Dev/modou%20Cours%20Gee/Comprendre%20l%27interaction%20%20e%CC%81le%CC%81ctromagnitique%20et%20les%20differentes%20occupation%20du%20sol%20%20en%20utilisant%20les%20donne%CC%81es%20d%27observation.assets/fig1.png" alt="fig1.png" style="zoom:80%;" />
 
 > Apres la creation de ces geometries, nous allons les fusionner en creant une collection et en donnant la nom de la classe d'occupation de sol.  Le code suivant permet de creer cette collection de vecteur avec les attributs respectifs. 
 
@@ -89,7 +87,7 @@ Map.addLayer(collection,viz,'Fausse Couleur')
 
 > Cette visualisation permet  aussi de verifier certaines classes comme les zones de cultures et de sol car ces classes peuvent subir un changement suivant une saison.  
 
-![fig3](/Users/modoumbaye/Dev/modou Cours Gee/Figures/fig3.png)
+<img src="/Users/modoumbaye/Dev/modou%20Cours%20Gee/Comprendre%20l%27interaction%20%20e%CC%81le%CC%81ctromagnitique%20et%20les%20differentes%20occupation%20du%20sol%20%20en%20utilisant%20les%20donne%CC%81es%20d%27observation.assets/fig3.png" alt="fig3.png" style="zoom:80%;" />
 
 ##  Profile spectral des différentes occupations de sol 
 
@@ -115,7 +113,7 @@ print(spectra)
 
 > la Figure ci-dessous montre le profile spectrale de l'occupation de sol (OS) de 4 classes à savoir l'eau,le sol nu, la zone de culture et la zone de végétation aquatique.  il est connu que le sol a  un tres grande valeur de reflectance comparé a d'autres types OS comme la végétation dans le domaine du visible. De meme que l'eau a la plus grande absorbance dans dans du domaine du proche infrarouge, ce qui corresponds a notre observation ici.  Entre la classe végétation  aquatique presente un effect optique   mixte à savoir une forte absorbance de l'eau  dans la fenêtre 700nm à 850nm et une forte reflectance de la végétation  de la même fenêtre optique.
 
-![fig4](/Users/modoumbaye/Dev/modou Cours Gee/Figures/fig4.png)
+<img src="/Users/modoumbaye/Dev/modou%20Cours%20Gee/Comprendre%20l%27interaction%20%20e%CC%81le%CC%81ctromagnitique%20et%20les%20differentes%20occupation%20du%20sol%20%20en%20utilisant%20les%20donne%CC%81es%20d%27observation.assets/fig4.png" alt="fig4.png" style="zoom:80%;" />
 
 ## Analyse de la serie temporelle et la detection de changement de classe 
 
@@ -139,7 +137,7 @@ var chartNir= ui.Chart.image.seriesByRegion({
 
 
 
-<img src="/Users/modoumbaye/Dev/modou Cours Gee/Figures/fig5.png" alt="fig5" style="zoom:60%;" />
+![fig5.png](/Users/modoumbaye/Dev/modou%20Cours%20Gee/Comprendre%20l%27interaction%20%20e%CC%81le%CC%81ctromagnitique%20et%20les%20differentes%20occupation%20du%20sol%20%20en%20utilisant%20les%20donne%CC%81es%20d%27observation.assets/fig5.png)
 
 
 
